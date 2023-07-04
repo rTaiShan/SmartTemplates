@@ -1,0 +1,77 @@
+[
+    {
+        "task_name": "Big Task",
+        "task_code": "big_task",
+        "functions_code": "big_task",
+        "enabled": true,
+        "html_source": "big_task\\template.html",
+        "base_path": "tasks\\",
+        "variables": {
+            "title_str": {
+                "function": "get_title_str",
+                "args": {
+                    "start_date": 2
+                }
+            },
+            "imgs": {
+                "function": "get_imgs",
+                "args": {
+                    "img_paths": [
+                        "media\\image.png",
+                        "media\\image.gif"
+                    ]
+                }
+            },
+            "observacao": {
+                "function": "get_observacao",
+                "args": {
+                    "codigo": "2"
+                }
+            }
+        }
+    },
+    {
+        "task_name": "Report Bacana",
+        "task_code": "report_bacana",
+        "functions_code": "report_task",
+        "enabled": true,
+        "html_source": "report_task\\template.html",
+        "base_path": "tasks\\",
+        "variables": {
+                "titulo": {
+                    "function": "common.get_arg",
+                    "args": {
+                        "arg": "Esse relatório é bacana"
+                    }
+                },
+                "status": {
+                    "function": "get_status",
+                    "args": {
+                        "fundo": "fundo bacana"
+                    }
+                }
+            }
+    },
+    {
+        "task_name": "Report Ruim",
+        "task_code": "report_ruim",
+        "functions_code": "report_task",
+        "enabled": true,
+        "html_source": "report_task\\template.html",
+        "base_path": "tasks\\",
+        "variables": {
+            "titulo": {
+                "function": "common.get_arg",
+                "args": {
+                    "arg": "Esse relatório é ruim"
+                }
+            },
+            "status": {
+                "function": "get_status",
+                "args": {
+                    "fundo": "fundo ruim"
+                }
+            }
+        }
+    }
+]

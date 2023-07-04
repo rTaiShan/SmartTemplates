@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+    
+    <b>Título: {{ title_str }}</b><br><br>
+    
+    Imagens: <br><br>
+    {% for img in imgs %}
+        Imagem {{ loop.index }}:<br>
+        {{ img.html_encoded | safe }}<br><br>
+    {% endfor %}
+
+    {{ observacao|safe }}
+            
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+    
+    <b>Título: {{ titulo }}</b><br><br>
+    
+    Status: {{ status['msg'] }}<br>
+
+    {{ status['img'].html_encoded | safe }}
+
+    {% if status['img'] %} <br> {% endif %}
+
+    
+    {{ status['if_error'] }}
+            
+{% endblock %}
