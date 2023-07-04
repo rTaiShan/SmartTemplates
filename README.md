@@ -13,6 +13,7 @@ A Task consists of three parts:
 * Task Definition: This defines the behavior of the task, associating the template, the functions and their arguments.
 
 ## Task Definition
+Tasks are defined by default in tasks/tasks.json
 
 A Task Definition is as such:
 
